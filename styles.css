@@ -1,7 +1,7 @@
-.playersContainer {
+.playersContainer, .messagesContainer {
   padding: 0;
 }
-.player {
+.player, .messages {
   height: 300px;
 }
 .playerOne {
@@ -15,4 +15,16 @@
 }
 .playerFour {
   background-color: rgb(100, 100, 100);
+}
+.playerOneMessages {
+  background-color: rgba(100, 140, 210, .6);
+}
+.playerTwoMessages {
+  background-color: rgba(100, 140, 140, .6);
+}
+.playerThreeMessages {
+  background-color: rgba(100, 100, 140, .6);
+}
+.playerFourMessages {
+  background-color: rgba(100, 100, 100, .6);
 }

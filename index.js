@@ -10,6 +10,15 @@ function setup() {
 }
 setup();
 
+function printMessage(num, rec, mes) {
+  const location = document.getElementById(`player${rec}Messages`);
+  console.log(location);
+  const newMessage = document.createElement('div');
+  console.log(newMessage);
+  newMessage.innerHTML = `Player ${num} said '${mes}'`;
+  location.prepend(newMessage);
+}
+
 function handleMessage(num) {
   // console.log(`handle message fired for player ${num}`);
   const recipientSource = document.getElementById(`recipient${num}`);
@@ -18,7 +27,8 @@ function handleMessage(num) {
   const message = messageSource.value;
   players[num-1].sendMessage(recipient, message);
   messageSource.value = '';
-  console.log(messageSource.value);
+  // console.log(messageSource.value);
   recipientSource.value = '';
-  console.log(recipientSource.value);
+  // console.log(recipientSource.value);
+  printMessage(num, recipient, message);
 }
