@@ -1,3 +1,18 @@
-* {
-  background-color: lightblue;
+.playersContainer {
+  padding: 0;
+}
+.player {
+  height: 300px;
+}
+.playerOne {
+  background-color: rgb(100, 140, 210);
+}
+.playerTwo {
+  background-color: rgb(100, 140, 140);
+}
+.playerThree {
+  background-color: rgb(100, 100, 140);
+}
+.playerFour {
+  background-color: rgb(100, 100, 100);
 }
